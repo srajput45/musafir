@@ -101,8 +101,7 @@
                                         very hospitable. The state also has many ecotourism projects that include many
                                         adventures trip and it is a chance to know the nature and wilderness from up
                                         close.</p>
-                                    <button class="text-center"><a href="#" class="text-capitalize">Add To
-                                            WishList</a></button>
+                                        <button class="text-center"><a data-toggle="modal" data-target="#wishListModel">Wishlist</a></button>
                                 </div>
                             </div>
                         </div>
@@ -258,6 +257,28 @@
                             <label>Not a member? <a href="#signUpModal" data-toggle="modal" data-dismiss="modal">Sing
                                     up</a></label>
                         </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="wishListModel" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- modal title -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add To Wishlist</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body using form-->
+                <div class="modal-body">
+                    <form action="/home/wishlist" method="POST">
+                        <div class="form-group">
+                            <label for="place">Place</label>
+                            <input type="text" class="form-control" name="place" placeholder="Enter The Place" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">ADD</button>
                     </form>
                 </div>
             </div>
